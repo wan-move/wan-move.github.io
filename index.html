@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+    <title>Wan-Move</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="mobile-warning">
+        For the best experience, it's better to use a desktop computer to view this website.
+        <br>
+        <button onclick="dismissWarning()">Continue</button>
+    </div>
+    
+    <div class="sidebar">
+        <h2 class="sidebar-title"><img src="./assets/logo.png" alt="Wan-Move logo" class="sidebar-logo"> Wan-Move</h2>
+        
+            <ul>
+                <li><a href="#single-object" class="nav-link"><i class="fas fa-video"></i>Single-object Motion Control</a></li>
+                <li><a href="#multi-object" class="nav-link"><i class="fas fa-video"></i>Multi-object Motion Control</a></li>
+                <li><a href="#compare" class="nav-link"><i class="fas fa-trophy"></i>Comparisons</a></li>
+                <li><a href="#camera" class="nav-link"><i class="fas fa-video"></i>Camera Control</a></li>
+                <li><a href="#transfer" class="nav-link"><i class="fas fa-trophy"></i>Motion Transfer</a></li>
+                <li><a href="#rotation" class="nav-link"><i class="fas fa-trophy"></i>3D Rotation</a></li>
+            </ul>
+        
+    </div>
+    <div class="content">
+        <div id="paper-info" class="paper-info">
+            <h1><img src="./assets/logo.png" alt="Wan-Move logo" class="title-logo"> Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance</h1>
+            <div class="authors">
+                <p>
+                    <span class="author"><a href="https://ruihang-chu.github.io/" target="_blank">Ruihang Chu</a></span>, 
+                    <span class="author"><a href="https://hexy.tech/" target="_blank">Yefei He</a></span>, 
+                    <span class="author"><a href="https://scholar.google.com/citations?user=_eZWcIMAAAAJ" target="_blank">Zhekai Chen</a></span>, 
+                    <span class="author"><a href="https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ" target="_blank">Shiwei Zhang</a></span>, 
+                    <span class="author"><a href="https://xuxiaogang.com/" target="_blank">Xiaogang Xu</a></span>, 
+                    <span class="author"><a href="https://zj-binxia.github.io/" target="_blank">Bin Xia</a></span>, 
+                    <span class="author"><a href="https://scholar.google.com/citations?user=hRWxWiEAAAAJ" target="_blank">Dingdong Wang</a></span>, 
+                    <span class="author"><a href="https://scholar.google.com/citations?user=ocMf7fQAAAAJ" target="_blank">Hongwei Yi</a></span>, 
+                    <span class="author"><a href="https://xh-liu.github.io/" target="_blank">Xihui Liu</a></span>, 
+                    <span class="author"><a href="https://hszhao.github.io/" target="_blank">Hengshuang Zhao</a></span>, 
+                    <span class="author"><a href="https://scholar.google.com/citations?user=8zksQb4AAAAJ" target="_blank">Yu Liu</a></span>, 
+                    <span class="author"><a href="https://scholar.google.com/citations?user=16RDSEUAAAAJ" target="_blank">Yingya Zhang</a></span>, 
+                    <span class="author"><a href="https://sites.google.com/view/iigroup-thu/about" target="_blank">Yujiu Yang</a></span>
+                    
+                </p>
+                <p>
+                    <span class="affiliation">Tongyi Lab, Alibaba Group</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="affiliation">Tsinghua University</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="affiliation">HKU</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="affiliation">CUHK</span>
+                    
+                    
+
+                </p>
+            </div>
+            <div class="links">
+                <p><a href="https://arxiv.org/abs/xx.xx" target="_blank">Paper (Arxiv)</a></p>
+                <p><a href="https://github.com/ali-vilab/Wan-Move" target="_blank">GitHub</a></p>
+                <p><a href="https://www.youtube.com/watch?v=_5Cy7Z2NQJQ" target="_blank">Video Demo</a></p>
+                <p><a href="https://huggingface.co/Ruihang/Wan-Move-14B-480P" target="_blank">Hugging Face</a></p> 
+            </div>
+            <h2>Please stay tuned for all video loading...</h2>
+
+        <section id="single-object" class="gallery-section">
+            <h2>Single-object Motion Control</h2>
+            <h3>Hover on the video to see corresponding text prompts</h3>
+            <div class="speed-controls" role="group" aria-label="Playback speed">
+                <span class="speed-label">Play speed:</span>
+                <button class="speed-btn active" data-speed="1">x1</button>
+                <button class="speed-btn" data-speed="2">x2</button>
+            </div>
+            <div class="gallery-3 interactive-grid"></div>
+        </section>
+
+        <section id="multi-object" class="gallery-section">
+        <h2>Multi-object Motion Control</h2>
+        <h3>Hover on the video to see corresponding text prompts</h3>
+        <div class="speed-controls" role="group" aria-label="Playback speed">
+            <span class="speed-label">Play speed:</span>
+            <button class="speed-btn active" data-speed="1">x1</button>
+            <button class="speed-btn" data-speed="2">x2</button>
+        </div>
+        <div class="gallery-3 interactive-grid"></div>
+    </section>
+    
+    <section id="compare" class="gallery-section">
+        <h2>Comparison</h2>
+        <p style="text-align: center; color: #666;">Qualitative comparisons with both the academic methods and commercial solutions.</p>
+        <div class="speed-controls" role="group" aria-label="Playback speed">
+            <span class="speed-label">Play speed:</span>
+            <button class="speed-btn active" data-speed="1">x1</button>
+            <button class="speed-btn" data-speed="2">x2</button>
+        </div>
+        <div class="gallery-3 compare-grid">
+            <div class="col-header">Tora<br/>Academic method</div>
+            <div class="col-header">Kling 1.5 Pro<br/>Commercial solution</div>
+            <div class="col-header">Wan-Move<br/>Ours</div>
+        </div>
+        <div class="gallery-3 interactive-grid"></div>
+    </section>
+        
+    <section id="camera" class="gallery-section">
+        <h2>Camera Control</h2>
+        <h3>Hover on the video to see corresponding text prompts</h3>
+        <div class="speed-controls" role="group" aria-label="Playback speed">
+            <span class="speed-label">Play speed:</span>
+            <button class="speed-btn active" data-speed="1">x1</button>
+            <button class="speed-btn" data-speed="2">x2</button>
+        </div>
+        <div class="gallery-3">
+            <div class="gallery-item" style=" --aspect-ratio: 16 / 9;">
+                <video class="gallery-video" loop muted autoplay playsinline>
+                    <source src="./assets/camera/camera-1.mp4" type="video/mp4">
+                </video>
+                <div class="resolution">5s</div>
+                <div class="prompt-overlay">Linear displacement</div>
+            </div>
+            <div class="gallery-item" style=" --aspect-ratio: 16 / 9;">
+                <video class="gallery-video" loop muted autoplay playsinline>
+                    <source src="./assets/camera/camera-2.mp4" type="video/mp4">
+                </video>
+                <div class="resolution">5s</div>
+                <div class="prompt-overlay">Dolly in</div>
+            </div>
+            <div class="gallery-item" style=" --aspect-ratio: 16 / 9;">
+                <video class="gallery-video" loop muted autoplay playsinline>
+                    <source src="./assets/camera/camera-3.mp4" type="video/mp4">
+                </video>
+                <div class="resolution">5s</div>
+                <div class="prompt-overlay">Dolly out</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transfer" class="gallery-section">
+        <h2>Motion Transfer</h2>
+        <h3>Hover on the video to see corresponding text prompts</h3>
+        <div class="speed-controls" role="group" aria-label="Playback speed">
+            <span class="speed-label">Play speed:</span>
+            <button class="speed-btn active" data-speed="1">x1</button>
+            <button class="speed-btn" data-speed="2">x2</button>
+        </div>
+        <div class="gallery-3 interactive-grid"></div>
+    </section>
+
+            
+    <section id="rotation" class="gallery-section">
+        <h2>3D Rotation</h2>
+        <h3>Hover on the video to see corresponding text prompts</h3>
+        <div class="speed-controls" role="group" aria-label="Playback speed">
+            <span class="speed-label">Play speed:</span>
+            <button class="speed-btn active" data-speed="1">x1</button>
+            <button class="speed-btn" data-speed="2">x2</button>
+        </div>
+        <div class="gallery-3">
+            <div class="gallery-item" style=" --aspect-ratio: 16 / 9;">
+                <video class="gallery-video" loop muted autoplay playsinline>
+                    <source src="./assets/rotation/case-1.mp4" type="video/mp4">
+                </video>
+                <div class="resolution">5s</div>
+            </div>
+            <div class="gallery-item" style=" --aspect-ratio: 16 / 9;">
+                <video class="gallery-video" loop muted autoplay playsinline>
+                    <source src="./assets/rotation/case-2.mp4" type="video/mp4">
+                </video>
+                <div class="resolution">5s</div>
+            </div>
+            <div class="gallery-item" style=" --aspect-ratio: 16 / 9;">
+                <video class="gallery-video" loop muted autoplay playsinline>
+                    <source src="./assets/rotation/case-3.mp4" type="video/mp4">
+                </video>
+                <div class="resolution">5s</div>
+            </div>
+        </div>
+    </section>
+        
+
+        <section id="contact-us" class="contact-us">
+            <h2>Contact Us</h2>
+            <p>
+                Feel free to contact Ruihang Chu at ruihangchu@gmail.com for any question, cooperation, and communication.
+            </p>
+            <!-- add a bibtex -->
+            <p>
+                If you find this work useful, please consider citing:
+            </p>
+            <!-- align left, use a rounded gray box to bound it.-->
+            <div class="citation-container">
+                <div class="citation-box">
+                    <pre>@article{chu2025wanmove,
+    title={Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance},
+    author={Ruihang Chu and Yefei He and Zhekai Chen and Shiwei Zhang and Xiaogang Xu and Bin Xia and Dingdong Wang and Hongwei Yi and Xihui Liu and Hengshuang Zhao and Yu Liu and Yingya Zhang and Yujiu Yang},
+    year={2025},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}</pre>
+                </div>
+            </div>
+            <h2>Thank LongLive, Jenga, UltraPixel, ControlNeXt, and ToonCrafter to provide us the project page's template! </h2>
+        </section>
+
+
+
+    </div>
+
+   <!-- Modal for image enlargement -->
+    <script src="./script.js"></script>
+</body>
+</html>
